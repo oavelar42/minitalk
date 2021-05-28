@@ -1,15 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   server.c                                           :+:      :+:    :+:   */
+/*   utils_2.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oavelar <oavelar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/28 10:45:34 by oavelar           #+#    #+#             */
-/*   Updated: 2021/05/28 22:34:14 by oavelar          ###   ########.fr       */
+/*   Created: 2021/05/28 21:52:59 by oavelar           #+#    #+#             */
+/*   Updated: 2021/05/28 22:34:56 by oavelar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
 
-//init server tomorrow
+// i need more function for treat my client and server 

@@ -6,13 +6,32 @@
 /*   By: oavelar <oavelar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 16:52:27 by oavelar           #+#    #+#             */
-/*   Updated: 2021/05/28 19:49:53 by oavelar          ###   ########.fr       */
+/*   Updated: 2021/05/28 22:00:53 by oavelar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "minitalk.h"
+
 int ft_num_neg(char *s)
 {
-    //"to be continue ...."
+    int count;
+    int neg;
+
+    count = 0;
+    neg = 1;
+    while (s[count] != '\0')
+    {
+        if (s[count] == '-')
+        {
+            neg *= -1;
+        }
+        else if (s[count] != '+' && s[count] != 32)
+        {
+            return (neg);
+        }
+        count += 1;
+    }
+    return (neg);
 }
 
 int ft_checker_num(char *s, int num, int count, int nb_true)
