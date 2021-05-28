@@ -6,7 +6,7 @@
 /*   By: oavelar <oavelar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 15:19:14 by oavelar           #+#    #+#             */
-/*   Updated: 2021/05/28 15:14:00 by oavelar          ###   ########.fr       */
+/*   Updated: 2021/05/28 17:13:13 by oavelar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 int ft_putchar(unsigned char a)
 {
-    write (1, &a, 1);
+    write(1, &a, 1);
 }
 
 int ft_convert(unsigned char str, int dest, int count)
