@@ -6,23 +6,23 @@
 #    By: oavelar <oavelar@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/27 15:03:35 by oavelar           #+#    #+#              #
-#    Updated: 2021/05/27 15:06:40 by oavelar          ###   ########.fr        #
+#    Updated: 2021/05/28 10:44:37 by oavelar          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = minitalk
+NAME 		= minitalk
 
-CC = gcc
+CC 			= gcc
 
-RM = rm -f
+RM 			= rm -f
 
-SRC = ./srcs/server.c \
-       ./srcs/my_put_nbr.c \
-			 ./srcs/client.c \
-       ./srcs/my_put_nbr.c \
-       ./srcs/my_getnbr.c
+SRC 		= ./srcs/server.c \
+       		  ./srcs/my_put_nbr.c \
+			  ./srcs/client.c \
+       		  ./srcs/my_put_nbr.c \
+       		  ./srcs/my_getnbr.c
 
-OBJ = $(SRC:.c=.o)
+OBJ 		= $(SRC:.c=.o)
 
 $(NAME): $(OBJ) $(NAME)
 	$(CC) $(OBJ) -o $(NAME)
