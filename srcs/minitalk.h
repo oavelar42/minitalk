@@ -6,13 +6,14 @@
 /*   By: oavelar <oavelar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 21:55:55 by oavelar           #+#    #+#             */
-/*   Updated: 2021/05/28 22:06:30 by oavelar          ###   ########.fr       */
+/*   Updated: 2021/05/29 17:32:19 by oavelar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MINITALK_H
 # define MINITALK_H
 
+# include <unistd.h>
 # include <signal.h>
 # include <sys/types.h>
 # include <stdio.h>
