@@ -6,7 +6,7 @@
 #    By: oavelar <oavelar@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/27 15:03:35 by oavelar           #+#    #+#              #
-#    Updated: 2021/05/30 16:46:13 by oavelar          ###   ########.fr        #
+#    Updated: 2021/05/30 18:54:29 by oavelar          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,11 +37,11 @@ $(SERVER) : $(SERVER_SRCS)
 
 clean :
 	@rm -f 
-	@printf "\e[31mclean done\e[0m\n"
+	@printf "\e[31mAll clean\e[0m\n"
 
 fclean : clean
 	@rm -f $(SERVER) $(CLIENT)
-	@printf "\e[31mfclean done\e[0m\n"
+	@printf "\e[31mfAll clean\e[0m\n"
 
 re : fclean all
 

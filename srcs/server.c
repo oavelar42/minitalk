@@ -6,16 +6,15 @@
 /*   By: oavelar <oavelar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 10:45:34 by oavelar           #+#    #+#             */
-/*   Updated: 2021/05/30 16:37:09 by oavelar          ###   ########.fr       */
+/*   Updated: 2021/05/30 18:55:38 by oavelar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
 
-int ft_charput(unsigned char b)
+int ft_char(unsigned char b)
 {
-    write(1, &b, 1);
-    return (1);
+	write(1, &b, 1);
 }
 
 int ft_number(int num)
@@ -24,7 +23,7 @@ int ft_number(int num)
 
 	if (num < 0)
 	{
-		ft_charput('-');
+		ft_char('-');
 		num = num * - 1;
 	}
 	if (num > 0)
@@ -32,7 +31,7 @@ int ft_number(int num)
 		count = num % 10;
 		num = num / 10;
 		ft_number(num);
-		ft_charput(48 + count);
+		ft_char(48 + count);
 	}
 }
 
@@ -58,22 +57,22 @@ void    ft_check(int point)
 	}
 	if (i == 8)
 	{
-		ft_charput(str);
+		ft_char(str);
 		i = 0;
 		str = '\0';
 		count = 1;
 	}
 }
 
-int	ft_server(void)
+int	ft_server()
 {
 	int nb;
 
 	nb = getpid();
-	if (nb == - 1)
+	if (nb == -1)
 		return (0);
 	ft_number(nb);
-	ft_charput('\n');
+	ft_char('\n');
 	return (nb);
 }
 
@@ -86,4 +85,7 @@ int main(int ac, char **av)
 	count = ft_server();
 	signal(SIGUSR1, ft_check);
 	signal(SIGUSR2, ft_check);
+	while (1)
+	{
+	}
 }
