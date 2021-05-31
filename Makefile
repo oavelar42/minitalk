@@ -6,7 +6,7 @@
 #    By: oavelar <oavelar@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/27 15:03:35 by oavelar           #+#    #+#              #
-#    Updated: 2021/05/30 18:54:29 by oavelar          ###   ########.fr        #
+#    Updated: 2021/05/31 16:01:49 by oavelar          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,8 @@ CC = gcc
 CFLAGS = -Werror -Wall -Wextra
 
 SERVER = server
-SERVER_SRCS = srcs/server.c
+SERVER_SRCS = srcs/server.c \
+			  srcs/utils_3.c
 
 CLIENT = client
 CLIENT_SRCS = srcs/client.c \
@@ -36,7 +37,7 @@ $(SERVER) : $(SERVER_SRCS)
 	@$(CC) $(FLAGS) $< -c
 
 clean :
-	@rm -f 
+	@rm -f server client 
 	@printf "\e[31mAll clean\e[0m\n"
 
 fclean : clean

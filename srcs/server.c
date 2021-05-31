@@ -6,7 +6,7 @@
 /*   By: oavelar <oavelar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 10:45:34 by oavelar           #+#    #+#             */
-/*   Updated: 2021/05/30 18:55:38 by oavelar          ###   ########.fr       */
+/*   Updated: 2021/05/31 16:10:19 by oavelar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,10 +82,11 @@ int main(int ac, char **av)
 	char	*str;
 
 	str = av[2];
+	ft_putstr("Server pid : ");
 	count = ft_server();
-	signal(SIGUSR1, ft_check);
-	signal(SIGUSR2, ft_check);
 	while (1)
 	{
+		signal(SIGUSR1, ft_check);
+		signal(SIGUSR2, ft_check);
 	}
 }
