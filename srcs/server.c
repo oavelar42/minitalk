@@ -6,25 +6,26 @@
 /*   By: oavelar <oavelar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 10:45:34 by oavelar           #+#    #+#             */
-/*   Updated: 2021/05/31 16:10:19 by oavelar          ###   ########.fr       */
+/*   Updated: 2021/06/01 10:11:23 by oavelar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
 
-int ft_char(unsigned char b)
+int	ft_char(unsigned char b)
 {
 	write(1, &b, 1);
+	return (1);
 }
 
-int ft_number(int num)
+int	ft_number(int num)
 {
-	int count;
+	int	count;
 
 	if (num < 0)
 	{
 		ft_char('-');
-		num = num * - 1;
+		num = num * -1;
 	}
 	if (num > 0)
 	{
@@ -33,9 +34,10 @@ int ft_number(int num)
 		ft_number(num);
 		ft_char(48 + count);
 	}
+	return (1);
 }
 
-void    ft_check(int point)
+void	ft_check(int point)
 {
 	static unsigned char	str = '\0';
 	static int				i = 0;
@@ -64,9 +66,9 @@ void    ft_check(int point)
 	}
 }
 
-int	ft_server()
+int	ft_server(void)
 {
-	int nb;
+	int	nb;
 
 	nb = getpid();
 	if (nb == -1)
@@ -76,7 +78,7 @@ int	ft_server()
 	return (nb);
 }
 
-int main(int ac, char **av)
+int	main(int ac, char **av)
 {
 	int		count;
 	char	*str;

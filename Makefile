@@ -6,7 +6,7 @@
 #    By: oavelar <oavelar@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/27 15:03:35 by oavelar           #+#    #+#              #
-#    Updated: 2021/05/31 16:01:49 by oavelar          ###   ########.fr        #
+#    Updated: 2021/06/01 10:02:22 by oavelar          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,11 +27,11 @@ all : $(SERVER) $(CLIENT)
 
 $(CLIENT) : $(CLIENT_SRCS)
 	@$(CC) $(CLIENT_SRCS) -o $(CLIENT)
-	@printf "\e[32m$@ built🗣\e[0m\n"
+	@printf "\e[32m$@ built\e[0m\n"
 
 $(SERVER) : $(SERVER_SRCS)
 	@$(CC) $(SERVER_SRCS) -o $(SERVER)
-	@printf "\e[32m$@ builti✔\e[0m\n"
+	@printf "\e[32m$@ built\e[0m\n"
 
 %.o : %.c
 	@$(CC) $(FLAGS) $< -c

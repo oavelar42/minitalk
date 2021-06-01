@@ -6,13 +6,13 @@
 /*   By: oavelar <oavelar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 15:19:14 by oavelar           #+#    #+#             */
-/*   Updated: 2021/05/30 18:55:29 by oavelar          ###   ########.fr       */
+/*   Updated: 2021/06/01 09:59:03 by oavelar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
 
-int ft_convert(unsigned char str, int dest, int count)
+int	ft_convert(unsigned char str, int dest, int count)
 {
 	if (count < 8)
 	{
@@ -26,16 +26,16 @@ int ft_convert(unsigned char str, int dest, int count)
 	return (0);
 }
 
-int main(int ac, char **av)
+int	main(int ac, char **av)
 {
-	int dest;
-	int num;
-	int count;
+	int	dest;
+	int	num;
+	int	count;
 
 	count = 0;
 	dest = ft_get_num(av[1]);
 	if (ac < 3)
-		write(2,"usage: ./client [pid server] [message]\n", 39);
+		write(2, "usage: ./client [pid server] [message]\n", 39);
 	if (ac == 3)
 	{
 		while (av[2][count] != '\0')

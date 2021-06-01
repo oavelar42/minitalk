@@ -6,16 +6,16 @@
 /*   By: oavelar <oavelar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 16:52:27 by oavelar           #+#    #+#             */
-/*   Updated: 2021/05/30 18:55:21 by oavelar          ###   ########.fr       */
+/*   Updated: 2021/06/01 09:59:45 by oavelar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
 
-int ft_num_neg(char *s)
+int	ft_num_neg(char *s)
 {
-	int count;
-	int neg;
+	int	count;
+	int	neg;
 
 	count = 0;
 	neg = 1;
@@ -34,7 +34,7 @@ int ft_num_neg(char *s)
 	return (neg);
 }
 
-int ft_checker_num(char *s, int num, int count, int nb_true)
+int	ft_checker_num(char *s, int num, int count, int nb_true)
 {
 	if (s[count] < 48 || s[count] > 57)
 	{
@@ -44,7 +44,7 @@ int ft_checker_num(char *s, int num, int count, int nb_true)
 		}
 		else if ((s[count] < 48 || s[count] > 57) && s[count] != '+'
 			&& s[count] != '-' || nb_true == 1 && (s[count] == '+'
-			|| s[count] == '-'))
+				|| s[count] == '-'))
 		{
 			return (1);
 		}
@@ -60,11 +60,11 @@ int ft_checker_num(char *s, int num, int count, int nb_true)
 	return (0);
 }
 
-int ft_get_num(char *s)
+int	ft_get_num(char *s)
 {
-	int nb_true;
-	int count;
-	int num;
+	int	nb_true;
+	int	count;
+	int	num;
 
 	count = 0;
 	num = 0;
