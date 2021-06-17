@@ -6,7 +6,7 @@
 /*   By: oavelar <oavelar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 15:19:14 by oavelar           #+#    #+#             */
-/*   Updated: 2021/06/01 09:59:03 by oavelar          ###   ########.fr       */
+/*   Updated: 2021/06/17 21:34:37 by oavelar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_convert(unsigned char str, int dest, int count)
 			kill(dest, SIGUSR1);
 		else
 			kill(dest, SIGUSR2);
-		usleep(200);
+		usleep(400);
 	}
 	return (0);
 }

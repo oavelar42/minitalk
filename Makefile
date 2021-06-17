@@ -6,7 +6,7 @@
 #    By: oavelar <oavelar@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/27 15:03:35 by oavelar           #+#    #+#              #
-#    Updated: 2021/06/01 10:02:22 by oavelar          ###   ########.fr        #
+#    Updated: 2021/06/17 21:33:25 by oavelar          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,7 +42,7 @@ clean :
 
 fclean : clean
 	@rm -f $(SERVER) $(CLIENT)
-	@printf "\e[31mfAll clean\e[0m\n"
+	@printf "\e[31mAll clean\e[0m\n"
 
 re : fclean all
 
