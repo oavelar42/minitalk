@@ -13,3 +13,14 @@ characters is COLOSSAL)
 needing to be restarted.
   
 - You can only use the two signals SIGUSR1 and SIGUSR2.</h4>
+
+- For Run :
+
+$ make
+
+create ./server 
+       ./client
+       
+_first point you need ./server (created number of server)
+
+_after run ./client <number server> <something>
