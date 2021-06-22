@@ -1,4 +1,4 @@
- [![Intro](https://img.shields.io/badge/Cursus-Minitalk-success?style=for-the-badge&logo=42)](https://github.com/oavelar42/minitalk)
+<h1>MInitalk</h1>
 
 <h4>  The client must communicate the string passed as a parameter to the server. Once
 the string has been received, the server must display it.
@@ -14,13 +14,13 @@ needing to be restarted.
   
 - You can only use the two signals SIGUSR1 and SIGUSR2.</h4>
 
-- For Run :
+## How to run:
 
-$ make
+Type "make" to compile it.
+To start the program runs :
 
-create ./server 
-       ./client
-       
-- _first point you need ./server (created number of server)
+`./server "to get the PID number"`
 
-- _after run ./client ("number server" "write something")
+then with that number execute ...
+
+`./client "PID" "something"`
