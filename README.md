@@ -23,4 +23,4 @@ create ./server
        
 - _first point you need ./server (created number of server)
 
-- _after run ./client ("number server" "something")
+- _after run ./client ("number server" "write something")
