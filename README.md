@@ -1,4 +1,4 @@
-<h1> Minitalk </h1>
+ [![Intro](https://img.shields.io/badge/Cursus-Minitalk-success?style=for-the-badge&logo=42)](https://github.com/oavelar42/minitalk)
 
 <h4>  The client must communicate the string passed as a parameter to the server. Once
 the string has been received, the server must display it.
